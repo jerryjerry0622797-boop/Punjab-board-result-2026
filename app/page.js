@@ -1,13 +1,7 @@
-"use client"
-export const dynamic = 'force-dynamic'
-export const metadata = {
-  title: "Punjab Board 11th 12th Result 2026 | All BISE Boards Check Online",
-  description: "Check 11th and 12th Class Result 2026 for all Punjab Boards: Lahore, Gujranwala, Faisalabad, Multan, Rawalpindi. Result Date: 23 September 2026.",
-  keywords: "bise result 2026, punjab board result, 11th class result, 12th class result, gujranwala lahore board result",
-}
-
+"use client";
+export const dynamic = 'force-dynamic';
 export default function Home() {
-
+const [selectedBoard, setSelecedBoard] = useState('');
   const handleCheckResult = (e) => {
     e.preventDefault();
     const form = e.target;
