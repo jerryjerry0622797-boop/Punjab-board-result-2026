@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Head from 'next/head'
 
 export default function Page() {
+  const [topic, setTopic] = useState('BISE 11th 12th Result 2026')
   const [className, setClassName] = useState('')
   const [board, setBoard] = useState('')
   const [roll, setRoll] = useState('')
@@ -28,7 +29,7 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>BISE Result 2025 - Official Punjab Board Result Online</title>
+        <title>BISE Result 2026 - Official Punjab Board Result Online</title>
         <meta name="description" content="Check BISE 11th and 12th Class Result 2026 online. Select your Board, Class and Roll Number to get result from official BISE website. Lahore, Multan, Faisalabad, Gujranwala and all Punjab Boards." />
         <meta name="keywords" content="BISE Result 2026, Punjab Board Result, 11th Class Result, 12th Class Result, biselahore.com, bise result online" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -72,7 +73,7 @@ export default function Page() {
             <div>
               <label style={{fontWeight: '600', color: '#334155', display: 'block', marginBottom: '8px'}}>4. Enter Roll No</label>
               <div style={{display: 'flex', gap: '10px'}}>
-                <input type="text" placeholder="123456" value={roll} onChange={e => setRoll(e.target.value)} required style={{flex: 1, padding: '12px', border: '2px solid #e2e8f0', borderRadius: '10px', fontSize: '16px'}} />
+                <input type="text" placeholder="roll number likho" value={roll} onChange={e => setRoll(e.target.value)} required style={{flex: 1, padding: '12px', border: '2px solid #e2e8f0', borderRadius: '10px', fontSize: '16px'}} />
                 <button type="submit" style={{padding: '12px 24px', background: '#4f46e5', color: 'white', border: 'none', borderRadius: '10px', fontWeight: '700', cursor: 'pointer', fontSize: '16px'}}>Result</button>
               </div>
             </div>
