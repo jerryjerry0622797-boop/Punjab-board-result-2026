@@ -7,9 +7,8 @@ export default function Page() {
   const [className, setClassName] = useState('')
   const [board, setBoard] = useState('')
   const [roll, setRoll] = useState('')
-const handleSubmit = (e) => {
-  e.preventDefault();
-  const boardLinks = {
+
+  const boardsLinks = {
     "Lahore": "https://www.biselahore.com/",
     "Gujranwala": "https://www.bisegrw.edu.pk/",
     "Faisalabad": "https://www.bisefsd.edu.pk/",
@@ -20,7 +19,15 @@ const handleSubmit = (e) => {
     "Sahiwal": "https://www.bisesahiwal.edu.pk/",
     "DG Khan": "https://www.bisedgkhan.edu.pk/"
   }
-const link = boardLinks[board] || "https://www.punjab.gov.pk/board_of_intermediate_secondary_education";
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!board) return alert("Please select board")
+    if (!className) return alert("Please select class")
+    if (!roll) return alert("Please enter roll number")
+
+    const link = boardsLinks[board] || "https://www.punjab.gov.pk/board_of_intermediate_secondary_education";
     window.open(link, '_blank') // Official website naye tab me
   }
 
@@ -40,7 +47,7 @@ const link = boardLinks[board] || "https://www.punjab.gov.pk/board_of_intermedia
           <h1 style={{textAlign: 'center', fontSize: '28px', fontWeight: '800', color: '#1e293b', marginBottom: '8px'}}>{topic}</h1>
           <p style={{textAlign: 'center', color: '#64748b', marginBottom: '30px'}}>Check Your Result From Official Website</p>
 
-          <form onSubmit={handleSubmit} className="space-y-4" style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
+          <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
 
             {/* 1. TOPIC */}
             <div>
@@ -63,7 +70,7 @@ const link = boardLinks[board] || "https://www.punjab.gov.pk/board_of_intermedia
               <label style={{fontWeight: '600', color: '#334155', display: 'block', marginBottom: '8px'}}>3. Select Board</label>
               <select value={board} onChange={e => setBoard(e.target.value)} required style={{width: '100%', padding: '12px', border: '2px solid #e2e8f0', borderRadius: '10px', fontSize: '16px'}}>
                 <option value="">-- Select Board --</option>
-                {Object.keys(boardLinks).map(b => <option key={b}>{b}</option>)}
+                {Object.keys(boardsLinks).map(b => <option key={b} value={b}>{b}</option>)}
               </select>
             </div>
 
