@@ -10,7 +10,7 @@ const [selectedBoard, setSelecedBoard] = useState('');
 
     // Har board ki official site
     const boardLinks = {
-      "BISE Gujranwala": "https://www.bisegrw.com/results/",
+      "BISE Gujranwala": "https://www.bisegrw.edu.pk/results/",
       "BISE Lahore": "https://www.biselahore.com/results/",
       "BISE Faisalabad": "https://www.bisefsd.edu.pk/results/",
       "BISE Multan": "https://www.bisemultan.edu.pk/results/",
