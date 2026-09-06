@@ -26,8 +26,7 @@ const [selectedBoard, setSelecedBoard] = useState('');
   { name: "BISE Sahiwal", url: "https://www.bisesahiwal.edu.pk" },
       { name: "BISE DG Khan", url: "https://www.bisedgkhan.edu.pk" },
     ];
-  }
-
+};
   return (
     <main className="min-h-screen bg-gray-50 p-4 font-sans">
 
