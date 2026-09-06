@@ -118,5 +118,5 @@ const [selectedBoard, setSelecedBoard] = useState('');
       </footer>
 
     </main>
-  )
+  );
 }
