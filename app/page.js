@@ -1,19 +1,7 @@
 "use client";
-export const dynamic = 'force-dynamic';
 import { useState } from 'react';
 export default function Home() {
 const [selectedBoard, setSelecedBoard] = useState('');
-  const handleCheckResult = (e) => {
-    e.preventDefault();
-    if (!selectedBoard) {
-      alert("Pehle Board select karo!");
-      return;
-    }
-    const board = boards.find(b => b.name === selectedBoard);
-    if (board) {
-      window.open(board.url, '_blank');
-    }
-  };
   // Har board ki official site
     const boards = [
       { name: "BISE Gujranwala", url: "https://www.bisegrw.edu.pk" },
@@ -26,6 +14,17 @@ const [selectedBoard, setSelecedBoard] = useState('');
   { name: "BISE Sahiwal", url: "https://www.bisesahiwal.edu.pk" },
       { name: "BISE DG Khan", url: "https://www.bisedgkhan.edu.pk" },
     ];
+  const handleCheckResult = (e) => {
+    e.preventDefault();
+    if (!selectedBoard) {
+      alert("Pehle Board select karo!");
+      return;
+    }
+    const board = boards.find(b => b.name === selectedBoard);
+    if (board) {
+      window.open(board.url, '_blank');
+    }
+  };
 };
   return (
     <main className="min-h-screen bg-gray-50 p-4 font-sans">
