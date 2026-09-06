@@ -11,7 +11,7 @@ const handleSubmit = (e) => {
   e.preventDefault();
   const boardsLinks = {
     "Lahore": "https://www.biselahore.com/",
-    "Gujranwala": "https://www.bisegrw..edu.pk/",
+    "Gujranwala": "https://www.bisegrw.edu.pk/",
     "Faisalabad": "https://www.bisefsd.edu.pk/",
     "Multan": "https://www.bisemultan.edu.pk/",
     "Rawalpindi": "https://www.biserwp.edu.pk/",
@@ -40,7 +40,7 @@ const link = boardLinks[board] || "https://www.punjab.gov.pk/board_of_intermedia
           <h1 style={{textAlign: 'center', fontSize: '28px', fontWeight: '800', color: '#1e293b', marginBottom: '8px'}}>{topic}</h1>
           <p style={{textAlign: 'center', color: '#64748b', marginBottom: '30px'}}>Check Your Result From Official Website</p>
 
-          <form onSubmit={checkResult} style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
+          <form onSubmit={handleSubmit} className="space-y-4" style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
 
             {/* 1. TOPIC */}
             <div>
