@@ -91,7 +91,7 @@ export default function Page() {
               <label className="label" style={{fontWeight: '600', color: '#334155', display: 'block', marginBottom: '8px'}}>3. Select Board</label>
               <select className="select" value={board} onChange={e => setBoard(e.target.value)} required style={{width: '100%', padding: '12px', border: '2px solid #e2e8f0', borderRadius: '10px', fontSize: '16px'}}>
                 <option value="">-- Select Board --</option>
-                {Object.keys(boardslinks).map(b => <option key={b}>{b}</option>)}
+                {Object.keys(boardsLinks).map(b => <option key={b}>{b}</option>)}
               </select>
             </div>
 
