@@ -9,7 +9,7 @@ export default function Page() {
   const [roll, setRoll] = useState('')
 const handleSubmit = (e) => {
   e.preventDefault();
-  const boardsLinks = {
+  const boardLinks = {
     "Lahore": "https://www.biselahore.com/",
     "Gujranwala": "https://www.bisegrw.edu.pk/",
     "Faisalabad": "https://www.bisefsd.edu.pk/",
@@ -21,7 +21,7 @@ const handleSubmit = (e) => {
     "DG Khan": "https://www.bisedgkhan.edu.pk/"
   }
 const link = boardLinks[board] || "https://www.punjab.gov.pk/board_of_intermediate_secondary_education";
-    window.open(boards[board], '_blank') // Official website naye tab me
+    window.open(link, '_blank') // Official website naye tab me
   }
 
   return (
