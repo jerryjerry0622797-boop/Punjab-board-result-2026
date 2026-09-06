@@ -3,7 +3,6 @@ import { useState } from 'react'
 import Head from 'next/head'
 
 export default function Page() {
-  const [topic, setTopic] = useState('BISE 9th 10th Result 2025')
   const [className, setClassName] = useState('')
   const [board, setBoard] = useState('')
   const [roll, setRoll] = useState('')
@@ -30,8 +29,8 @@ export default function Page() {
     <>
       <Head>
         <title>BISE Result 2025 - Official Punjab Board Result Online</title>
-        <meta name="description" content="Check BISE 9th and 10th Class Result 2025 online. Select your Board, Class and Roll Number to get result from official BISE website. Lahore, Multan, Faisalabad, Gujranwala and all Punjab Boards." />
-        <meta name="keywords" content="BISE Result 2025, Punjab Board Result, 9th Class Result, 10th Class Result, biselahore.com, bise result online" />
+        <meta name="description" content="Check BISE 11th and 12th Class Result 2026 online. Select your Board, Class and Roll Number to get result from official BISE website. Lahore, Multan, Faisalabad, Gujranwala and all Punjab Boards." />
+        <meta name="keywords" content="BISE Result 2026, Punjab Board Result, 11th Class Result, 12th Class Result, biselahore.com, bise result online" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
@@ -55,8 +54,8 @@ export default function Page() {
               <label style={{fontWeight: '600', color: '#334155', display: 'block', marginBottom: '8px'}}>2. Select Class</label>
               <select value={className} onChange={e => setClassName(e.target.value)} required style={{width: '100%', padding: '12px', border: '2px solid #e2e8f0', borderRadius: '10px', fontSize: '16px'}}>
                 <option value="">-- Select Class --</option>
-                <option value="9th">9th Class</option>
-                <option value="10th">10th Class</option>
+                <option value="11th">11th Class</option>
+                <option value="12th">12th Class</option>
               </select>
             </div>
 
