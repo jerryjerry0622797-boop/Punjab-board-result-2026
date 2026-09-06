@@ -5,21 +5,27 @@ export default function Home() {
 const [selectedBoard, setSelecedBoard] = useState('');
   const handleCheckResult = (e) => {
     e.preventDefault();
-    const form = e.target;
-    const board = form.board.value;
-
-    // Har board ki official site
-    const boardLinks = {
-      "BISE Gujranwala": "https://www.bisegrw.edu.pk/results/",
-      "BISE Lahore": "https://www.biselahore.com/results/",
-      "BISE Faisalabad": "https://www.bisefsd.edu.pk/results/",
-      "BISE Multan": "https://www.bisemultan.edu.pk/results/",
-      "BISE Rawalpindi": "https://www.biserawalpindi.edu.pk/results/",
-      "BISE Sargodha": "https://www.bisesargodha.edu.pk/results/",
-      "BISE Bahawalpur": "https://www.bisebwp.edu.pk/results/",
-      "BISE Sahiwal": "https://www.bisesahiwal.edu.pk/results/",
-      "BISE DG Khan": "https://www.bisedgkhan.edu.pk/results/",
+    if (!selectedBoard) {
+      alert("Pehle Board select karo!");
+      return;
     }
+    const board = boards.find(b => b.name === selectedBoard);
+    if (board) {
+      window.open(board.url, '_blank');
+    }
+  };
+  // Har board ki official site
+    const boardLinks = [
+      { name: "BISE Gujranwala", url: "https://www.bisegrw.edu.pk" },
+  { name: "BISE LAHORE",url: "https://www.biselahore.com" },
+  { name: "BISE Faisalabad", url: "https://www.bisefsd.edu.pk" },
+  { name: "BISE Multan", url: "https://www.bisemultan.edu.pk" },
+  { name: "BISE Bahawalpur", url: "https://www.bisebwp.edu.pk" },
+  { name: "BISE Sargodha", url: "https://www.bisesargodha.edu.pk" },
+  { name: "BISE Rawalpindi", url: "https://www.biserawalpindi.edu.pk" },
+  { name: "BISE Sahiwal", url: "https://www.bisesahiwal.edu.pk" },
+      { name: "BISE DG Khan", url: "https://www.bisedgkhan.edu.pk" },
+    ];
 
     window.open(boardLinks[board], '_blank')
   }
