@@ -37,7 +37,7 @@ export default function Page() {
 
         {/* OG Tags for SEO */}
         <meta property="og:title" content="BISE Result 2026 - Punjab Board Result Online" />
-        <meta property="og:description" content="Check BISE 11th and 12th Class Result 2026 online from all Punjab Boards official website." />
+        <meta property="og:description" content="Check BISE 11th and 12th Class Result 2026 online from all Punjab Boards website." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yourdomain.com/bise-result-2026" />
 
