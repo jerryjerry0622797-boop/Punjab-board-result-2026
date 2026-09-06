@@ -10,7 +10,7 @@ export default function Page() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const boardLinks = {
+    const boardsLinks = {
       "Lahore": "https://www.biselahore.com/",
       "Gujranwala": "https://www.bisegrw.edu.pk/",
       "Faisalabad": "https://www.bisefsd.edu.pk/",
@@ -21,7 +21,7 @@ export default function Page() {
       "Sahiwal": "https://www.bisesahiwal.edu.pk/",
       "DG Khan": "https://www.bisedgkhan.edu.pk/"
     }
-    const link = boardLinks[board] || "https://www.punjab.gov.pk/board_of_intermediate_secondary_education";
+    const link = boardsLinks[board] || "https://www.punjab.gov.pk/board_of_intermediate_secondary_education";
     window.open(link, '_blank') // Official website naye tab me
   }
 
@@ -91,7 +91,7 @@ export default function Page() {
               <label className="label" style={{fontWeight: '600', color: '#334155', display: 'block', marginBottom: '8px'}}>3. Select Board</label>
               <select className="select" value={board} onChange={e => setBoard(e.target.value)} required style={{width: '100%', padding: '12px', border: '2px solid #e2e8f0', borderRadius: '10px', fontSize: '16px'}}>
                 <option value="">-- Select Board --</option>
-                {Object.keys(boardLinks).map(b => <option key={b}>{b}</option>)}
+                {Object.keys(boardsLinks).map(b => <option key={b}>{b}</option>)}
               </select>
             </div>
 
