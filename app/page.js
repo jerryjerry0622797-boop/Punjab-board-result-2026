@@ -15,7 +15,7 @@ const [selectedBoard, setSelecedBoard] = useState('');
     }
   };
   // Har board ki official site
-    const boardLinks = [
+    const boards = [
       { name: "BISE Gujranwala", url: "https://www.bisegrw.edu.pk" },
   { name: "BISE LAHORE",url: "https://www.biselahore.com" },
   { name: "BISE Faisalabad", url: "https://www.bisefsd.edu.pk" },
@@ -26,8 +26,6 @@ const [selectedBoard, setSelecedBoard] = useState('');
   { name: "BISE Sahiwal", url: "https://www.bisesahiwal.edu.pk" },
       { name: "BISE DG Khan", url: "https://www.bisedgkhan.edu.pk" },
     ];
-
-    window.open(boardLinks[board], '_blank')
   }
 
   return (
