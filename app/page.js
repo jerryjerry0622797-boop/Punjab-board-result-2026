@@ -52,14 +52,14 @@ export default function Page() {
       <Head>
         {/* Basic SEO */}
         <title>BISE Result 2026 - Check 11th & 12th Class Result Online | All Punjab Boards</title>
-        <meta name="description" content="Check BISE 11th and 12th Class Result 2026 online. Get your result from official BISE websites for Lahore, Multan, Faisalabad, Gujranwala, Rawalpindi and all Punjab Boards." />
+        <meta name="description" content="Check BISE 11th and 12th Class Result 2026 online. Get your result from BISE websites for Lahore, Multan, Faisalabad, Gujranwala, Rawalpindi and all Punjab Boards." />
         <meta name="keywords" content="BISE Result 2026, Punjab Board Result, 11th Class Result 2026, 12th Class Result 2026, bise result online, biselahore.com, bisefsd, bisemultan" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={siteUrl} />
 
         {/* Open Graph for Facebook/WhatsApp */}
-        <meta property="og:title" content="BISE Result 2026 - Official Punjab Board Result Online" />
+        <meta property="og:title" content="BISE Result 2026 - Punjab Board Result Online" />
         <meta property="og:description" content="Check 11th & 12th Class BISE Result 2026 online for all Punjab Boards." />
         <meta property="og:url" content={siteUrl} />
         <meta property="og:type" content="website" />
@@ -68,7 +68,7 @@ export default function Page() {
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="BISE Result 2026 - Check Result Online" />
-        <meta name="twitter:description" content="Check BISE 11th and 12th Class Result 2026 online from official Punjab Board websites." />
+        <meta name="twitter:description" content="Check BISE 11th and 12th Class Result 2026 online from Punjab Board websites." />
         <meta name="twitter:image" content={`${siteUrl}/og-image.jpg`} />
 
         {/* JSON-LD Schema */}
@@ -83,7 +83,7 @@ export default function Page() {
         <div style={{background: 'white', borderRadius: '20px', boxShadow: '0 20px 60px rgba(0,0,0,0.3)', padding: '40px', width: '100%', maxWidth: '500px'}}>
 
           <h1 style={{textAlign: 'center', fontSize: '28px', fontWeight: '800', color: '#1e293b', marginBottom: '8px'}}>{topic}</h1>
-          <p style={{textAlign: 'center', color: '#64748b', marginBottom: '30px'}}>Check Your Result From Official Website</p>
+          <p style={{textAlign: 'center', color: '#64748b', marginBottom: '30px'}}>Check Your Result From Punjab Website</p>
 
           <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
 
