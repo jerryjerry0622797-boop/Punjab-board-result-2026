@@ -2,7 +2,7 @@
 import { useState } from 'react';
 export default function Home() {
 const [selectedBoard, setSelecedBoard] = useState('');
-  const [rollNo, setRollNo] = useStae('');
+  const [rollNo, setRollNo] = useState('');
   // Har board ki official site
     const boards = [
       { name: "BISE Gujranwala", url: "https://www.bisegrw.edu.pk" },
