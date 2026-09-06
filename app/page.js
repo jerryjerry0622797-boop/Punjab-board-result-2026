@@ -52,7 +52,11 @@ const [selectedBoard, setSelecedBoard] = useState('');
 
           <div className="mb-4">
             <label className="font-bold text-gray-700 block mb-1">2. Select Board</label>
-            <select name="board" required className="w-full p-3 border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+        <select
+        defaultValue=""
+          onChange={(e) => setSelectedBoard(e.target.value)}
+            required
+              className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
               <option>BISE Gujranwala</option>
               <option>BISE Lahore</option>
               <option>BISE Faisalabad</option>
@@ -90,7 +94,7 @@ const [selectedBoard, setSelecedBoard] = useState('');
       <article className="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-3 text-blue-700">Punjab All BISE Board Result 2026</h2>
         <p className="mb-4 text-gray-700">
-          Punjab k tamam 9 Boards <b>11th Class</b> aur <b>12th Class HSSC Result 2026</b> ka elan
+          Punjab k tamam 9 Boards <b>12th Class HSSC Result 2026</b> ka elan
           <b> 23 September 2026 at 10:00 AM</b> ko karenge. Is me Lahore, Gujranwala, Faisalabad, Multan,
           Rawalpindi, Sargodha, Bahawalpur, Sahiwal aur DG Khan shamil hain.
         </p>
