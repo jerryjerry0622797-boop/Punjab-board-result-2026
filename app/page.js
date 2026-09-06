@@ -22,23 +22,24 @@ export default function Home() {
     if(!selectedBoard) return alert("Pehle Board select karo");
     
     const boardData = boards.find(b => b.name === selectedBoard);
-    window.open(boardData.url, '_blank'); // Nayi tab me site khul jayegi
+    window.open(boardData.url, '_blank');
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-gray-100">
-      <div className="w-full max-w-md">
-        <h1 className="text-3xl font-bold text-center mb-6">BISE Result 2025</h1>
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-gradient-to-br from-blue-500 to-indigo-600">
+      <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl p-8">
+        <h1 className="text-3xl font-bold text-center mb-2 text-gray-800">BISE Result 2025</h1>
+        <p className="text-center text-gray-500 mb-6">Official Website pe jao</p>
         
-        <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md">
+        <form onSubmit={handleSubmit} className="space-y-5">
           
-          <div className="mb-4">
-            <label className="font-bold text-gray-700 block mb-1">1. Select Board</label>
+          <div>
+            <label className="block text-sm font-semibold text-gray-700 mb-2">1. Select Board</label>
             <select 
               value={selectedBoard}
               onChange={(e) => setSelectedBoard(e.target.value)}
               required 
-              className="w-full p-3 border border-gray-300 rounded-md"
+              className="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:ring-0 outline-none"
             >
               <option value="">-- Select Board --</option>
               {boards.map((board) => (
@@ -47,19 +48,19 @@ export default function Home() {
             </select>
           </div>
 
-          <div className="mb-4">
-            <label className="font-bold text-gray-700 block mb-1">2. Enter Roll No</label>
+          <div>
+            <label className="block text-sm font-semibold text-gray-700 mb-2">2. Enter Roll No</label>
             <input 
               type="text"
               value={rollNo}
               onChange={(e) => setRollNo(e.target.value)}
               required
-              placeholder="123456"
-              className="w-full p-3 border border-gray-300 rounded-md"
+              placeholder="Example: 123456"
+              className="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:ring-0 outline-none"
             />
           </div>
 
-          <button type="submit" className="w-full bg-blue-600 text-white p-3 rounded-md font-bold hover:bg-blue-700">
+          <button type="submit" className="w-full bg-blue-600 text-white p-3 rounded-lg font-bold text-lg hover:bg-blue-700 transition duration-300 shadow-md">
             Result Dekho
           </button>
 
