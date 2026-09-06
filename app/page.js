@@ -2,6 +2,7 @@
 import { useState } from 'react';
 export default function Home() {
 const [selectedBoard, setSelecedBoard] = useState('');
+  const [rollNo, setRollNo] = useStae('');
   // Har board ki official site
     const boards = [
       { name: "BISE Gujranwala", url: "https://www.bisegrw.edu.pk" },
@@ -57,15 +58,10 @@ const [selectedBoard, setSelecedBoard] = useState('');
           onChange={(e) => setSelectedBoard(e.target.value)}
             required
               className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500">
-              <option>BISE Gujranwala</option>
-              <option>BISE Lahore</option>
-              <option>BISE Faisalabad</option>
-              <option>BISE Multan</option>
-              <option>BISE Rawalpindi</option>
-              <option>BISE Sargodha</option>
-              <option>BISE Bahawalpur</option>
-              <option>BISE Sahiwal</option>
-              <option>BISE DG Khan</option>
+                <option value="">--Select Board --</option>
+              {boards.map((board) => (
+              <option key={board} value={board}>{board}</option>
+                ))}
             </select>
           </div>
 
