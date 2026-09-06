@@ -10,7 +10,7 @@ export default function Page() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const boardsLinks = {
+    const boardLinks = {
       "Lahore": "https://www.biselahore.com/",
       "Gujranwala": "https://www.bisegrw.edu.pk/",
       "Faisalabad": "https://www.bisefsd.edu.pk/",
@@ -21,14 +21,14 @@ export default function Page() {
       "Sahiwal": "https://www.bisesahiwal.edu.pk/",
       "DG Khan": "https://www.bisedgkhan.edu.pk/"
     }
-    const link = boardsLinks[board] || "https://www.punjab.gov.pk/board_of_intermediate_secondary_education";
+    const link = boardLinks[board] || "https://www.punjab.gov.pk/board_of_intermediate_secondary_education";
     window.open(link, '_blank') // Official website naye tab me
   }
 
   return (
     <>
       <Head>
-        <title>BISE Result 2026 - Official Punjab Board Result Online</title>
+        <title>BISE Result 2026 - Punjab Board Result Online</title>
         <meta name="description" content="Check BISE 11th and 12th Class Result 2026 online. Select your Board, Class and Roll Number to get result from official BISE website. Lahore, Multan, Faisalabad, Gujranwala and all Punjab Boards." />
         <meta name="keywords" content="BISE Result 2026, Punjab Board Result, 11th Class Result, 12th Class Result, biselahore.com, bise result online, bise multan result, bise fsd result" />
         <meta name="robots" content="index, follow" />
@@ -36,14 +36,14 @@ export default function Page() {
         <link rel="canonical" href="https://yourdomain.com/bise-result-2026" />
 
         {/* OG Tags for SEO */}
-        <meta property="og:title" content="BISE Result 2026 - Official Punjab Board Result Online" />
+        <meta property="og:title" content="BISE Result 2026 - Punjab Board Result Online" />
         <meta property="og:description" content="Check BISE 11th and 12th Class Result 2026 online from all Punjab Boards official website." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yourdomain.com/bise-result-2026" />
 
         {/* Twitter Tags */}
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="BISE Result 2026 - Official Punjab Board Result Online" />
+        <meta name="twitter:title" content="BISE Result 2026 - Punjab Board Result Online" />
         <meta name="twitter:description" content="Check BISE 11th and 12th Class Result 2026 online." />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -91,7 +91,7 @@ export default function Page() {
               <label className="label" style={{fontWeight: '600', color: '#334155', display: 'block', marginBottom: '8px'}}>3. Select Board</label>
               <select className="select" value={board} onChange={e => setBoard(e.target.value)} required style={{width: '100%', padding: '12px', border: '2px solid #e2e8f0', borderRadius: '10px', fontSize: '16px'}}>
                 <option value="">-- Select Board --</option>
-                {Object.keys(boardsLinks).map(b => <option key={b}>{b}</option>)}
+                {Object.keys(boardLinks).map(b => <option key={b}>{b}</option>)}
               </select>
             </div>
 
