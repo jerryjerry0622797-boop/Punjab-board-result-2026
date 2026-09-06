@@ -7,22 +7,20 @@ export default function Page() {
   const [className, setClassName] = useState('')
   const [board, setBoard] = useState('')
   const [roll, setRoll] = useState('')
-
-  const boards = {
-    "Lahore": "https://www.biselahore.com",
-    "Gujranwala": "https://www.bisegrw.com",
-    "Faisalabad": "https://www.bisefsd.edu.pk",
-    "Multan": "https://www.bisemultan.edu.pk",
-    "Rawalpindi": "https://www.biserwp.edu.pk",
-    "Sargodha": "https://www.bisesargodha.edu.pk",
-    "Bahawalpur": "https://www.bisebwp.edu.pk",
-    "Sahiwal": "https://www.bisesahiwal.edu.pk",
-    "DG Khan": "https://www.bisedgkhan.edu.pk"
+const handleSubmit = (e) => {
+  e.preventDefault();
+  const boardsLinks = {
+    "Lahore": "https://www.biselahore.com/",
+    "Gujranwala": "https://www.bisegrw..edu.pk/",
+    "Faisalabad": "https://www.bisefsd.edu.pk/",
+    "Multan": "https://www.bisemultan.edu.pk/",
+    "Rawalpindi": "https://www.biserwp.edu.pk/",
+    "Sargodha": "https://www.bisesargodha.edu.pk/",
+    "Bahawalpur": "https://www.bisebwp.edu.pk/",
+    "Sahiwal": "https://www.bisesahiwal.edu.pk/",
+    "DG Khan": "https://www.bisedgkhan.edu.pk/"
   }
-
-  function checkResult(e) {
-    e.preventDefault()
-    if(!board) return alert('Pehle Board select karo')
+const link = boardLinks[board] || "https://www.punjab.gov.pk/board_of_intermediate_secondary_education";
     window.open(boards[board], '_blank') // Official website naye tab me
   }
 
