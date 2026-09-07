@@ -79,31 +79,31 @@ export default function Page() {
         <style>{`
           @media (max-width: 640px) {
           .card { 
-          padding: 10px!important;
+          padding: 12px!important;
           border-radius: 10px!important;
-          margin: 6px!important;
-          box-shadow: 0 4px 20px rgba(0,0,0,0.1)!important;
+          margin: 0 auto !important;
+          max-width: 350px !important;
           }
           .title { 
-          font-size: 16px!important;
+          font-size: 17px!important;
           margin-bottom: 4px!important;
           }
           .subtitle {
           font-size: 11px!important;
-          margin-bottom: 16px!important;
+          margin-bottom: 14px!important;
           }
           .label {
           font-size: 12px!important;
           margin-bottom: 4px!important;
           }
           .input,.select {
-          padding: 7px!important;
+          padding: 8px!important;
           font-size: 13px!important;
           }
           .btn {
-          padding: 9px!important;
-          font-size: 14px!important;
-          width: 90%!important;
+          padding: 8px 14px !important;
+          font-size: 13px!important;
+          width: 80%!important;
           margin-top: 0!important;
           }
           .row {
@@ -114,6 +114,7 @@ export default function Page() {
           .form {
           gap: 10px!important;
           }
+          main { padding: 8px !important; }
           }
         `}</style>
       </Head>
