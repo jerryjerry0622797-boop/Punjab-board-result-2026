@@ -108,7 +108,7 @@ export default function Page() {
           margin-top: 0!important;
           }
           .row {
-          flex-direction: row!important;
+          flex-direction: column!important;
           gap: 8px!important;
           align-items: flex-end;
           }
