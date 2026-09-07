@@ -82,8 +82,8 @@ export default function Page() {
           padding: 12px!important;
           border-radius: 10px!important;
           margin: 0 auto !important;
-          max-width: 350px !important;
-          width: 80 !important;
+          max-width: 300px !important;
+          width: 80% !important;
           }
           .title { 
           font-size: 17px!important;
@@ -115,7 +115,7 @@ export default function Page() {
           .form {
           gap: 10px!important;
           }
-          main { padding: 8px !important; }
+          main { padding: 16px !important; }
           }
         `}</style>
       </Head>
@@ -125,7 +125,7 @@ export default function Page() {
         <div className="card" style={{background: 'white', borderRadius: '20px', boxShadow: '0 20px 60px rgba(0,0,0,0.3)', padding: '40px', width: '100%', maxWidth: '500px'}}>
 
           <h1 className="title" style={{textAlign: 'center', fontSize: '28px', fontWeight: '800', color: '#1e293b', marginBottom: '8px', lineHeight: 1.3}}>{topic}</h1>
-          <p className="subtitle" style={{textAlign: 'center', color: '#64748b', marginBottom: '30px', fontSize: '16px'}}>Check Your Result From Official Website</p>
+          <p className="subtitle" style={{textAlign: 'center', color: '#64748b', marginBottom: '30px', fontSize: '16px'}}>Check Your Result From punjab Website</p>
 
           <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column', gap: '10px'}}>
 
