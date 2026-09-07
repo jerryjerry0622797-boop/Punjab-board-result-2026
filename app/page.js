@@ -82,8 +82,8 @@ export default function Page() {
           padding: 12px!important;
           border-radius: 10px!important;
           margin: 0 auto !important;
-          max-width: 250px !important;
-          width: 75% !important;
+          max-width: 200px !important;
+          width: 55% !important;
           }
           .title { 
           font-size: 16px!important;
