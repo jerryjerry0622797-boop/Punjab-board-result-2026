@@ -1,3 +1,11 @@
+export const metadata = {
+  title: "BISE 11th 12th Result 2026 | Punjab Board Result",
+  description: "Check BISE Lahore, Gujranwala, Multan, Rawalpindi 11th 12th Result 2026 online from punjab board websites. Fast and free.",
+  keywords: "bise result 2026, 11th result, 12th result, punjab board result",
+  verification: {
+    google: "bVhy4UJ1b_6ADWOqAi_-MR9gh11EMQO1bhHutFuySrI",
+  },
+};
 'use client'
 import { useState } from 'react'
 import Head from 'next/head'
