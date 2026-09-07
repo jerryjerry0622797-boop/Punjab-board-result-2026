@@ -8,7 +8,7 @@ export default function Page() {
   const [board, setBoard] = useState('')
   const [roll, setRoll] = useState('')
 
-  const siteUrl = "https://yourdomain.com"
+  const siteUrl = "https://yourdomain.com" // <-- apni domain daal do
 
   const boardsLinks = {
     "Lahore": "https://www.biselahore.com/",
@@ -29,35 +29,62 @@ export default function Page() {
     if (!roll) return alert("Please enter roll number")
 
     const link = boardsLinks[board] || "https://www.punjab.gov.pk/board_of_intermediate_secondary_education";
+    alert(`Board: ${board}\nClass: ${className}\nRoll No: ${roll}\n\nSite pe jaa kar result check karein`);
     window.open(link, '_blank')
   }
 
+  // JSON-LD Schema for Google
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "BISE Result 2026",
     "url": siteUrl,
+    "description": "Check BISE 11th and 12th Class Result 2026 online for all Punjab Boards including Lahore, Multan, Faisalabad, Gujranwala.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": `${siteUrl}/?board={board}&class={class}&roll={roll}`,
+      "query-input": "required name=board name=class name=roll"
+    }
   }
 
   return (
     <>
       <Head>
+        {/* ===== BASIC SEO ===== */}
         <title>BISE Result 2026 - Check 11th & 12th Class Result Online | All Punjab Boards</title>
-        <meta name="description" content="Check BISE 11th and 12th Class Result 2026 online. Get your result from official BISE websites for Lahore, Multan, Faisalabad, Gujranwala and all Punjab Boards." />
+        <meta name="description" content="Check BISE 11th and 12th Class Result 2026 online. Get your result from official BISE websites for Lahore, Multan, Faisalabad, Gujranwala, Rawalpindi, Sargodha, Bahawalpur, Sahiwal, DG Khan." />
+        <meta name="keywords" content="BISE Result 2026, Punjab Board Result, 11th Class Result 2026, 12th Class Result 2026, bise result online, biselahore.com, bisefsd, bisemultan, bisegrw" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="BISE Result Portal" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={siteUrl} />
+
+        {/* ===== OPEN GRAPH / FACEBOOK / WHATSAPP ===== */}
+        <meta property="og:title" content="BISE Result 2026 - Official Punjab Board Result Online" />
+        <meta property="og:description" content="Check 11th & 12th Class BISE Result 2026 online for all Punjab Boards." />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={`${siteUrl}/og-image.jpg`} /> {/* 1200x630 image */}
+
+        {/* ===== TWITTER CARD ===== */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="BISE Result 2026 - Check Result Online" />
+        <meta name="twitter:description" content="Check BISE 11th and 12th Class Result 2026 online from official Punjab Board websites." />
+        <meta name="twitter:image" content={`${siteUrl}/og-image.jpg`} />
+
+        {/* ===== JSON-LD SCHEMA ===== */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-        {/* Mobile responsive CSS */}
+        {/* ===== MOBILE RESPONSIVE CSS ===== */}
         <style>{`
           @media (max-width: 640px) {
-           .card { padding: 20px!important; border-radius: 16px!important; }
-           .title { font-size: 22px!important; }
-           .subtitle { font-size: 14px!important; }
-           .label { font-size: 14px!important; }
-           .input,.select,.btn { padding: 10px!important; font-size: 15px!important; }
-           .btn { width: 100%!important; }
-           .row { flex-direction: column!important; }
+          .card { padding: 20px!important; border-radius: 16px!important; }
+          .title { font-size: 22px!important; }
+          .subtitle { font-size: 14px!important; }
+          .label { font-size: 14px!important; }
+          .input,.select,.btn { padding: 10px!important; font-size: 15px!important; }
+          .btn { width: 100%!important; margin-top: 8px; }
+          .row { flex-direction: column!important; }
           }
         `}</style>
       </Head>
