@@ -78,14 +78,42 @@ export default function Page() {
         {/* ===== MOBILE RESPONSIVE CSS ===== */}
         <style>{`
           @media (max-width: 640px) {
-          .card { padding: 12px!important; border-radius: 12px!important; }
-          .title { font-size: 18px!important; }
-          .subtitle { font-size: 12px!important; }
-          .label { font-size: 13px!important; }
-          .input,.select,.btn { padding: 8px!important; font-size: 14px!important; }
-          .btn { width: 100%!important; margin-top: 8px; }
-          .row { flex-direction: column!important; }
-          .form { gap: 12px!important; }
+          .card { 
+          padding: 10px!important;
+          border-radius: 10px!important;
+          margin: 6px!important;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.1)!important;
+          }
+          .title { 
+          font-size: 16px!important;
+          margin-bottom: 4px!important;
+          }
+          .subtitle {
+          font-size: 11px!important;
+          margin-bottom: 16px!important;
+          }
+          .label {
+          font-size: 12px!important;
+          margin-bottom: 4px!important;
+          }
+          .input,.select {
+          padding: 7px!important;
+          font-size: 13px!important;
+          }
+          .btn {
+          padding: 9px!important;
+          font-size: 14px!important;
+          width: 90%!important;
+          margin-top: 0!important;
+          }
+          .row {
+          flex-direction: row!important;
+          gap: 8px!important;
+          align-items: flex-end;
+          }
+          .form {
+          gap: 10px!important;
+          }
           }
         `}</style>
       </Head>
@@ -97,7 +125,7 @@ export default function Page() {
           <h1 className="title" style={{textAlign: 'center', fontSize: '28px', fontWeight: '800', color: '#1e293b', marginBottom: '8px', lineHeight: 1.3}}>{topic}</h1>
           <p className="subtitle" style={{textAlign: 'center', color: '#64748b', marginBottom: '30px', fontSize: '16px'}}>Check Your Result From Official Website</p>
 
-          <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column', gap: '12px'}}>
+          <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column', gap: '10px'}}>
 
             {/* 1. TOPIC */}
             <div>
