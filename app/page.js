@@ -82,8 +82,8 @@ export default function Page() {
           padding: 12px!important;
           border-radius: 10px!important;
           margin: 0 auto !important;
-          max-width: 200px !important;
-          width: 55% !important;
+          max-width: 240px !important;
+          width: 75% !important;
           }
           .title { 
           font-size: 16px!important;
@@ -115,7 +115,7 @@ export default function Page() {
           .form {
           gap: 10px!important;
           }
-          main { padding: 16px !important; }
+          main { padding: 24px 10px !important; }
           }
         `}</style>
       </Head>
