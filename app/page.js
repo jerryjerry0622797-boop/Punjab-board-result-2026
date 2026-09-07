@@ -82,11 +82,11 @@ export default function Page() {
           padding: 12px!important;
           border-radius: 10px!important;
           margin: 0 auto !important;
-          max-width: 300px !important;
-          width: 80% !important;
+          max-width: 250px !important;
+          width: 75% !important;
           }
           .title { 
-          font-size: 17px!important;
+          font-size: 16px!important;
           margin-bottom: 4px!important;
           }
           .subtitle {
