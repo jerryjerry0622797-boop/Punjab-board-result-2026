@@ -8,7 +8,7 @@ export default function Page() {
   const [board, setBoard] = useState('')
   const [roll, setRoll] = useState('')
 
-  const siteUrl = "https://yourdomain.com" // <-- apni domain daal do
+  const siteUrl = "https://punjab-board-result-2026-iota.vercel.app"
 
   const boardsLinks = {
     "Lahore": "https://www.biselahore.com/",
