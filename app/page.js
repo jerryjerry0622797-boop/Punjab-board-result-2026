@@ -52,7 +52,7 @@ export default function Page() {
       <Head>
         {/* ===== BASIC SEO ===== */}
         <title>BISE Result 2026 - Check 11th & 12th Class Result Online | All Punjab Boards</title>
-        <meta name="description" content="Check BISE 11th and 12th Class Result 2026 online. Get your result from official BISE websites for Lahore, Multan, Faisalabad, Gujranwala, Rawalpindi, Sargodha, Bahawalpur, Sahiwal, DG Khan." />
+        <meta name="description" content="Check BISE 11th and 12th Class Result 2026 online. Get your result from punjab BISE websites for Lahore, Multan, Faisalabad, Gujranwala, Rawalpindi, Sargodha, Bahawalpur, Sahiwal, DG Khan." />
         <meta name="keywords" content="BISE Result 2026, Punjab Board Result, 11th Class Result 2026, 12th Class Result 2026, bise result online, biselahore.com, bisefsd, bisemultan, bisegrw" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="BISE Result Portal" />
@@ -60,7 +60,7 @@ export default function Page() {
         <link rel="canonical" href={siteUrl} />
 
         {/* ===== OPEN GRAPH / FACEBOOK / WHATSAPP ===== */}
-        <meta property="og:title" content="BISE Result 2026 - Official Punjab Board Result Online" />
+        <meta property="og:title" content="BISE Result 2026 - Punjab Board Result Online" />
         <meta property="og:description" content="Check 11th & 12th Class BISE Result 2026 online for all Punjab Boards." />
         <meta property="og:url" content={siteUrl} />
         <meta property="og:type" content="website" />
@@ -69,7 +69,7 @@ export default function Page() {
         {/* ===== TWITTER CARD ===== */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="BISE Result 2026 - Check Result Online" />
-        <meta name="twitter:description" content="Check BISE 11th and 12th Class Result 2026 online from official Punjab Board websites." />
+        <meta name="twitter:description" content="Check BISE 11th and 12th Class Result 2026 online from Punjab Board websites." />
         <meta name="twitter:image" content={`${siteUrl}/og-image.jpg`} />
 
         {/* ===== JSON-LD SCHEMA ===== */}
