@@ -78,13 +78,14 @@ export default function Page() {
         {/* ===== MOBILE RESPONSIVE CSS ===== */}
         <style>{`
           @media (max-width: 640px) {
-          .card { padding: 20px!important; border-radius: 16px!important; }
-          .title { font-size: 22px!important; }
-          .subtitle { font-size: 14px!important; }
-          .label { font-size: 14px!important; }
-          .input,.select,.btn { padding: 10px!important; font-size: 15px!important; }
+          .card { padding: 12px!important; border-radius: 12px!important; }
+          .title { font-size: 18px!important; }
+          .subtitle { font-size: 12px!important; }
+          .label { font-size: 13px!important; }
+          .input,.select,.btn { padding: 8px!important; font-size: 14px!important; }
           .btn { width: 100%!important; margin-top: 8px; }
           .row { flex-direction: column!important; }
+          .form { gap: 12px!important; }
           }
         `}</style>
       </Head>
@@ -96,7 +97,7 @@ export default function Page() {
           <h1 className="title" style={{textAlign: 'center', fontSize: '28px', fontWeight: '800', color: '#1e293b', marginBottom: '8px', lineHeight: 1.3}}>{topic}</h1>
           <p className="subtitle" style={{textAlign: 'center', color: '#64748b', marginBottom: '30px', fontSize: '16px'}}>Check Your Result From Official Website</p>
 
-          <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column', gap: '20px'}}>
+          <form onSubmit={handleSubmit} style={{display: 'flex', flexDirection: 'column', gap: '12px'}}>
 
             {/* 1. TOPIC */}
             <div>
